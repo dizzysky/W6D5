@@ -18,3 +18,221 @@ Migrating to CreateCats (20230804204559)
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[36mCat Create (1.4ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2023-01-01"], ["color", "white"], ["name", "yy"], ["sex", "M"], ["description", nil], ["created_at", "2023-08-04 20:52:28.508789"], ["updated_at", "2023-08-04 20:52:28.508789"]]
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2023-08-04 17:17:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 526)
+Completed 200 OK in 21ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4562)
+
+
+Started GET "/cats" for ::1 at 2023-08-04 17:18:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/cats"):
+  
+Started GET "/" for ::1 at 2023-08-04 17:19:45 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/93ba227be27b4908/variables" for ::1 at 2023-08-04 17:19:45 -0400
+Started GET "/" for ::1 at 2023-08-04 17:21:48 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/d657daa4253ac6e5/variables" for ::1 at 2023-08-04 17:21:48 -0400
+Started GET "/" for ::1 at 2023-08-04 17:22:46 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/08b04da885e55ca7/variables" for ::1 at 2023-08-04 17:22:46 -0400
+Started GET "/" for ::1 at 2023-08-04 17:22:48 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/4b454455e8a0e6d8/variables" for ::1 at 2023-08-04 17:22:48 -0400
+Started POST "/__better_errors/4b454455e8a0e6d8/variables" for ::1 at 2023-08-04 17:22:51 -0400
+Started GET "/" for ::1 at 2023-08-04 17:23:01 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started GET "/" for ::1 at 2023-08-04 17:23:02 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/94150b310fd3db84/variables" for ::1 at 2023-08-04 17:23:02 -0400
+Started GET "/" for ::1 at 2023-08-04 17:23:42 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 283)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 954)
+
+
+Started GET "/cats" for ::1 at 2023-08-04 17:24:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/cats"):
+  
+Started GET "/cat" for ::1 at 2023-08-04 17:24:57 -0400
+
+ActionController::RoutingError - uninitialized constant CatController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/fc9799de5d4e4dc6/variables" for ::1 at 2023-08-04 17:24:57 -0400
+Started GET "/cat" for ::1 at 2023-08-04 17:28:01 -0400
+
+ActionController::RoutingError - uninitialized constant CatController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/c83e1eb862aaf0c0/variables" for ::1 at 2023-08-04 17:28:01 -0400
+Started GET "/" for ::1 at 2023-08-04 17:28:06 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 282)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 945)
+
+
+Started GET "/cats" for ::1 at 2023-08-04 17:40:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/cats"):
+  
+Started GET "/cat" for ::1 at 2023-08-04 17:40:22 -0400
+
+ActionController::RoutingError - uninitialized constant CatController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/9339b9de39c04f39/variables" for ::1 at 2023-08-04 17:40:22 -0400
+Started GET "/cat" for ::1 at 2023-08-04 17:41:30 -0400
+
+ActionController::RoutingError - uninitialized constant CatController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/f5392a9cd44a3413/variables" for ::1 at 2023-08-04 17:41:30 -0400
+Started GET "/cats" for ::1 at 2023-08-04 17:43:16 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started GET "/cats" for ::1 at 2023-08-04 17:43:17 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/2917d2d3bd0212f4/variables" for ::1 at 2023-08-04 17:43:17 -0400
+Started POST "/__better_errors/2917d2d3bd0212f4/eval" for ::1 at 2023-08-04 17:43:19 -0400
+Started GET "/cats" for ::1 at 2023-08-04 17:43:22 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/bc6f1db207540099/variables" for ::1 at 2023-08-04 17:43:22 -0400
+Started GET "/cats" for ::1 at 2023-08-04 17:51:51 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/15bbf9c1f6e6a780/variables" for ::1 at 2023-08-04 17:51:51 -0400
+Started GET "/" for ::1 at 2023-08-04 17:51:55 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 282)
+Completed 200 OK in 4ms (Views: 2.5ms | Allocations: 977)
+
+
+Started GET "/" for ::1 at 2023-08-04 17:55:51 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/huangyinyin/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 2ms (Views: 1.2ms | Allocations: 211)
+
+
+Started GET "/cats" for ::1 at 2023-08-04 17:55:58 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started GET "/cats" for ::1 at 2023-08-04 17:55:58 -0400
+
+ActionController::RoutingError - uninitialized constant CatsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  CatsConrtoller
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/b0687fe92238a911/variables" for ::1 at 2023-08-04 17:55:58 -0400
+Started GET "/cats" for ::1 at 2023-08-04 17:57:32 -0400
+Processing by CatsController#index as HTML
+  [1m[36mCat Load (2.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/controllers/cats_controller.rb:6:in `index'
+Completed 200 OK in 59ms (Views: 55.4ms | ActiveRecord: 20.8ms | Allocations: 10954)
+
+
+Started GET "/images/icons/gear.png" for ::1 at 2023-08-04 17:57:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/icons/gear.png"):
+  
