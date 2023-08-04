@@ -1,4 +1,7 @@
+require 'action_view'
+
 class Cat < ApplicationRecord
+include ActionView::Helpers::DateHelper
   CAT_COLORS = ['black', 'brown', 'orange', 'white', 'grey']
 
   validates :name,  presence: true
@@ -9,9 +12,8 @@ class Cat < ApplicationRecord
 
 
   def birth_date_cannot_be_future
-    if birth_date.present? && birth_date > Date.today
+    return unless birth_date.present? && birth_date > Date.today
       errors.add(:birth_date, "can't be in the future")
-    end
   end
 
   def age
